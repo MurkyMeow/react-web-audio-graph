@@ -13,6 +13,7 @@
     "ahooks": "3.1.13",
     "aubiojs": "0.0.1",
     "canvas-gauges": "2.1.7",
+    "complex.js": "^2.1.1",
     "fs": "file:./shims/fs",
     "immer": "9.0.12",
     "path": "file:./shims/path",
