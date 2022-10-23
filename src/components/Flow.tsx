@@ -60,6 +60,7 @@ import { useContextMenu } from "context/ContextMenuContext";
 import { AnyAudioNode, useNodeContext } from "context/NodeContext";
 import { useProject } from "context/ProjectContext";
 import { useOnConnect, useOnEdgeRemove, useOnNodeRemove } from "utils/handles";
+import VocalTubeModel from "./nodes/VocalTubeModel";
 
 const nodeTypes = {
   ADSR: ADSR,
@@ -87,6 +88,7 @@ const nodeTypes = {
   Metronome: Metronome,
   Mixer: Mixer,
   Noise: Noise,
+  VocalTubeModel: VocalTubeModel,
   NotGate: NotGate,
   OrGate: OrGate,
   Oscillator: Oscillator,

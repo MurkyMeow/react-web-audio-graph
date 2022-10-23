@@ -15,6 +15,7 @@ const items = [
       { label: "Noise", node: "Noise" },
       { label: "Oscillator", node: "Oscillator" },
       { label: "Oscillator Note", node: "OscillatorNote" },
+      { label: "Vocal Tube Model", node: "VocalTubeModel" },
     ],
     label: "Sources",
   },

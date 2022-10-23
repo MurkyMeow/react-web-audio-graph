@@ -19,6 +19,7 @@ import SampleAndHoldWorkletProcessor from "worklet-loader!worklets/sample-and-ho
 import SignWorkletProcessor from "worklet-loader!worklets/sign-processor.worklet.ts";
 import TransformerWorkletProcessor from "worklet-loader!worklets/transformer-processor.worklet.ts";
 import XorGateWorkletProcessor from "worklet-loader!worklets/xor-gate-processor.worklet.ts";
+import VocalTubeProcessor from "worklet-loader!worklets/vocal-tube/vocal-tube-processor.worklet.ts";
 
 interface Props {
   children: React.ReactNode;
@@ -56,6 +57,7 @@ function Audio({ children }: Props) {
         context.audioWorklet.addModule(SignWorkletProcessor),
         context.audioWorklet.addModule(TransformerWorkletProcessor),
         context.audioWorklet.addModule(XorGateWorkletProcessor),
+        context.audioWorklet.addModule(VocalTubeProcessor),
       ]);
       setReady(true);
     };
